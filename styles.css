@@ -334,42 +334,38 @@ img {
 /* ===== WORK =====*/
 .work__container {
     row-gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .work__img {
     box-shadow: 0px 225px 225px rgba(14, 36, 49, 0.15);
     border-radius: 1rem;
     overflow: hidden;
+    width: 50%;
+    margin-bottom: 20px;
 }
 
 .work__img img {
     transition: 1s;
+    width: 100%;
 }
 
 .work__img img:hover {
     transform: scale(1.1);
 }
 
-/* ===== CONTACT =====*/
-.contact__input {
-    width: 100%;
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-semi);
-    padding: 1rem;
-    border-radius: 0.5rem;
-    border: 1.5px solid var(--second-color);
-    outline: none;
-    margin-bottom: var(--mb-4);
+.work__container ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
 }
 
-.contact__button {
-    display: block;
-    border: none;
-    outline: none;
-    font-size: var(--normal-font-size);
-    cursor: pointer;
-    margin: auto;
+.work__container li {
+    margin-bottom: 10px;
 }
+
 
 /* ===== FOOTER =====*/
 .footer {
