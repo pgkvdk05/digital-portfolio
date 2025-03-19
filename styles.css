@@ -224,10 +224,10 @@ img {
 
 .home__blob-img {
     width: 1600px;
-	height: 900px;
+    height: 900px;
 }
 
-/*BUTTONS*/
+/*===== BUTTONS =====*/
 .button {
     display: inline-block;
     background-color: var(--first-color);
@@ -263,7 +263,6 @@ img {
 
 /* ===== SKILLS =====*/
 .skills__container {
-
     text-align: center;
 }
 
@@ -308,10 +307,29 @@ img {
     z-index: var(--z-back);
 }
 
-.skills__html { width: 95%; }
-.skills__css { width: 85%; }
-.skills__js { width: 55%; }
-.skills__img { border-radius: 0.5rem; }
+.skills__html {
+    width: 95%;
+}
+
+.skills__css {
+    width: 85%;
+}
+
+.skills__js {
+    width: 55%;
+}
+
+.skills__python {
+    width: 95%;
+}
+
+.skills__java {
+    width: 85%;
+}
+
+.skills__img {
+    border-radius: 0.5rem;
+}
 
 /* ===== WORK =====*/
 .work__container {
@@ -380,56 +398,60 @@ img {
 .footer__copy {
     font-size: var(--smaller-font-size);
 }
+
 .social-logos {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px; /* Space between logos */
-            padding: 20px;
-        }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
 
-        .social-logo {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 24px;
-            color: white;
-            transition: transform 0.3s ease;
-        }
+.social-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    transition: transform 0.3s ease;
+}
 
-        .social-logo:hover {
-            transform: scale(1.1);
-        }
+.social-logo:hover {
+    transform: scale(1.1);
+}
 
-        .facebook {
-            background-color: #1877F2;
-        }
+.facebook {
+    background-color: #1877F2;
+}
 
-        .instagram {
-            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-        }
+.instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
 
-        .twitter {
-            background-color: #1DA1F2;
-        }
+.twitter {
+    background-color: #1DA1F2;
+}
 
-        .linkedin {
-          background-color: #0077B5;
-        }
-        .github {
-          background-color: #333;
-        }
-        .youtube {
-          background-color: #FF0000;
-        }
-        .social-logo i{
-            font-size: 30px;
-        }
+.linkedin {
+    background-color: #0077B5;
+}
 
-/* ===== MEDIA QUERIES=====*/
+.github {
+    background-color: #333;
+}
+
+.youtube {
+    background-color: #FF0000;
+}
+
+.social-logo i{
+    font-size: 30px;
+}
+
+/* ===== MEDIA QUERIES =====*/
 @media screen and (max-width: 320px) {
     .home {
         row-gap: 2rem;
