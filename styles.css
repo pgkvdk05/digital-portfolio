@@ -447,25 +447,73 @@ img {
     font-size: 30px;
 }
 /* ===== CONTACT =====*/
+
+.contact section {
+    padding: 3rem 0;
+    background-color: #f7f7f7;
+}
+
+.content-section h2 {
+    margin-bottom: 1rem;
+}
+
+.content-section p {
+    margin-bottom: 2rem;
+}
+
+/* Add this for input section animation */
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .contact__input {
     width: 100%;
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-semi);
     padding: 1rem;
-    border-radius: 0.5rem;
-    border: 1.5px solid var(--second-color);
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact__input:focus {
     outline: none;
-    margin-bottom: var(--mb-4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .contact__button {
-    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: #fff;
     border: none;
-    outline: none;
-    font-size: var(--normal-font-size);
+    border-radius: 10px;
     cursor: pointer;
-    margin: auto;
 }
+
+.contact__button:hover {
+    background-color: #3e8e41;
+}
+
+/* Add animation to input section */
+.contact__form {
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 /* ===== MEDIA QUERIES =====*/
 @media screen and (max-width: 320px) {
     .home {
